@@ -1,0 +1,310 @@
+@import url('https://fonts.gooleapis.com/css?family=poppins:200,300,400,500,600,700,800,900display=swp');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+} 
+body
+{
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh ;
+}
+
+/** container CSS **/
+.container
+{
+	position: relative;
+	width: 100%;
+	margin: 50px;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: #fff; 
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 35px  rgba(0, 0, 0, 0.1);
+}
+
+/** LEFT SIDE CSS **/
+
+.container .left_side
+{
+	position: relative;
+	background: #003147;
+	padding: 40px;
+} 
+
+/** PERSONAL INFORMATION CSS **/
+
+.ProfileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 28px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+.ProfileText .imgBx
+{
+	position: relative; 
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+.ProfileText .imgBx img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.ProfileText h2
+{
+	color: #fff;
+	font-size: 1.3em;
+	margin: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+
+}
+.ProfileText h2 span
+{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+/** CONTECT INFORMATION CSS **/
+
+.contactinfo
+{
+	padding-top:40px ;
+}
+.title
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.contactinfo ul 
+{
+	position: relative;
+}
+.contactinfo ul li 
+{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.contactinfo ul li .icon 
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #03a9f4;
+}
+.contactinfo ul li span 
+{
+	color: #fff;
+	font-weight: 300;
+}
+ /** EDUCATION PORTATION CSS **/
+.contactinfo.education li 
+{
+margin: 15px;
+
+}
+.contactinfo.education h5
+{
+	color: #03a9f4;
+	font-weight: 500;
+} 
+.contactinfo.education h4:nth-child(2)
+{
+	color: #fff;
+	font-weight: 500;
+}
+
+.contactinfo.education h6
+{
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+}
+/** LANGUAGE PORTATION CS **/
+
+.contactinfo.language .percent
+{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #081921;
+	display: block;
+	margin-top: 5px;
+
+}
+.contactinfo.language .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+
+/** RIGHT SIDE CSS **/
+.container .right_side
+{
+	position: relative;
+	background: #fff;
+	
+	padding: 40px;
+}
+
+/** PROFILE CSS **/
+.about
+{
+	margin: 50px;
+}
+.about:last-child
+{
+	margin-bottom: 0;
+}
+.title2
+{
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+p
+{
+	color: #333;
+	text-align: justify;
+	
+}
+
+/** EXPERIANCE DETAIL CSS **/
+.about .box
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+.about .box .your_company
+{
+	min-width: 150px;
+}
+.about .box .your_company h5
+{
+	text-transform: uppercase;
+	color: #848c90;
+	font-weight: 600;
+}
+.about .box .text h4
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size:16px ;
+
+}
+/** SKILL CSS PORTATION **/
+
+.skills .box
+{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: center;
+} 
+.skills .box h4
+{
+	text-transform: uppercase;
+	color: #848c99;
+	font-weight: 500;
+}
+.skills .box .percent
+{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0;
+}
+.skills .box .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+/** INTEREST PORTATION CSS **/
+.Interest ul
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.Interest ul li 
+{
+	list-style: none;
+	color: #333;
+	font-weight: 500;
+	margin: 10px 0;
+}
+.Interest ul li .fa 
+{
+	color: #03a9f4;
+	font-size: 18px;
+	width: 20px;
+}
+
+/** MEDIA CSS PORTATION **/
+@media (max-width 100px)
+{
+	.container
+	{
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.Interest ul li
+	{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width 600px)
+{
+	.about .box
+	{
+		flex-direction: column;
+	}
+	.about .box .your_company
+	{
+		margin-bottom: 5px;
+	}
+	.Interest ul
+	{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.skills .box
+	{
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+
+}
